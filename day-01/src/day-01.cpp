@@ -49,7 +49,7 @@ public:
 
 	friend ostream& operator<<(ostream& os, const Elf& obj)
 	{
-		cout << "Elf #" << obj.id << ": " << obj.repr() << " = " << obj.total() << " calories";
+		os << "Elf #" << obj.id << ": " << obj.repr() << " = " << obj.total() << " calories";
 		return os;
 	}
 };

@@ -149,7 +149,7 @@ public:
 		for (auto& iter : this->children)
 		{
 			iter->clean();
-			free(iter);
+			delete iter;
 		}
 	}
 };
